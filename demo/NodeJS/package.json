@@ -1,0 +1,32 @@
+{
+  "name": "normalize-colors",
+  "version": "0.0.1",
+  "description": "normalize colors for all js frameworks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmurikKhoyetsyan/normalize-colors.git"
+  },
+  "keywords": [
+    "colors",
+    "color",
+    "normalize",
+    "node",
+    "js",
+    "nodejs",
+    "react",
+    "vue",
+    "reactjs",
+    "react-native",
+    "javascript"
+  ],
+  "author": "Amurik Khoyetsyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmurikKhoyetsyan/normalize-colors/issues"
+  },
+  "homepage": "https://github.com/AmurikKhoyetsyan/normalize-colors#readme"
+}
