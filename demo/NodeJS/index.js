@@ -1,1 +1,37 @@
-console.log(1)
+const normalizeColor = require('normalize-colors');
+
+console.log('HEX');
+console.log('normalizeColor("#F00")                                 :::     ', normalizeColor("#F00"));
+console.log('normalizeColor("#f00")                                 :::     ', normalizeColor("#f00"));
+console.log('normalizeColor("#FF0000")                              :::     ', normalizeColor("#FF0000"));
+console.log('normalizeColor("#ff0000")                              :::     ', normalizeColor("#ff0000"));
+console.log('RGB / RGBA');
+console.log('normalizeColor("rgb(255 0 0)")                         :::     ', normalizeColor("rgb(255 0 0)"));
+console.log('normalizeColor("rgb(255, 0, 0)")                       :::     ', normalizeColor("rgb(255, 0, 0)"));
+console.log('normalizeColor("rgba(255, 0, 0, 0.5)")                 :::     ', normalizeColor("rgba(255, 0, 0, 0.5)"));
+console.log('HSL / HSLA');
+console.log('normalizeColor("hsl(120 100% 50%)")                    :::     ', normalizeColor("hsl(120 100% 50%)"));
+console.log('normalizeColor("hsl(120, 100%, 50%)")                  :::     ', normalizeColor("hsl(120, 100%, 50%)"));
+console.log('normalizeColor("hsla(120, 100%, 50%, 0.5)")            :::     ', normalizeColor("hsla(120, 100%, 50%, 0.5)"));
+console.log('HWB');
+console.log('normalizeColor("hwb(120 50% 0%)")                      :::     ', normalizeColor("hwb(120 50% 0%)"));
+console.log('normalizeColor("hwb(120, 50%, 0%)")                    :::     ', normalizeColor("hwb(120, 50%, 0%)"));
+console.log('LCH (CIE LCH)');
+console.log('normalizeColor("lch(50% 20 180)")                      :::     ', normalizeColor("lch(50% 20 180)"));
+console.log('normalizeColor("lch(50, 20, 180)")                     :::     ', normalizeColor("lch(50, 20, 180)"));
+console.log('OKLAB');
+console.log('normalizeColor("oklab(0.6 0.1 -0.05)")                 :::     ', normalizeColor("oklab(0.6 0.1 -0.05)"));
+console.log('normalizeColor("oklab(60% 0.1 -0.05)")                 :::     ', normalizeColor("oklab(60% 0.1 -0.05)"));
+console.log('OKLCH');
+console.log('normalizeColor("oklch(0.6 0.2 180)")                   :::     ', normalizeColor("oklch(0.6 0.2 180)"));
+console.log('normalizeColor("oklch(60% 0.2 180)")                   :::     ', normalizeColor("oklch(60% 0.2 180)"));
+console.log('CSS color() function');
+console.log('normalizeColor("color(srgb 0.5 0 0)")                  :::     ', normalizeColor("color(srgb 0.5 0 0)"));
+console.log('normalizeColor("color(srgb-linear 0.215 0 0)")         :::     ', normalizeColor("color(srgb-linear 0.215 0 0)"));
+console.log('normalizeColor("color(display-p3 0.24 0.52 0.48)")     :::     ', normalizeColor("color(display-p3 0.24 0.52 0.48)"));
+console.log('normalizeColor("color(a98-rgb 0.44 0.5 0.37)")         :::     ', normalizeColor("color(a98-rgb 0.44 0.5 0.37)"));
+console.log('normalizeColor("color(prophoto-rgb 0.28 0.4 0.42)")    :::     ', normalizeColor("color(prophoto-rgb 0.28 0.4 0.42)"));
+console.log('normalizeColor("color(rec2020 0.42 0.48 0.36)")        :::     ', normalizeColor("color(rec2020 0.42 0.48 0.36)"));
+console.log('normalizeColor("color(xyz 0.2 0.15 0.6)")              :::     ', normalizeColor("color(xyz 0.2 0.15 0.6)"));
+console.log('normalizeColor("color(xyz-d50 0.2 0.14 0.45)")         :::     ', normalizeColor("color(xyz-d50 0.2 0.14 0.45)"));
+console.log('normalizeColor("color(xyz-d65 0.22 0.15 0.59)")        :::     ', normalizeColor("color(xyz-d65 0.22 0.15 0.59)"));

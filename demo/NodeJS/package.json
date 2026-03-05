@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/AmurikKhoyetsyan/normalize-colors/issues"
   },
-  "homepage": "https://github.com/AmurikKhoyetsyan/normalize-colors#readme"
+  "homepage": "https://github.com/AmurikKhoyetsyan/normalize-colors#readme",
+  "dependencies": {
+    "normalize-colors": "^0.0.1"
+  }
 }
