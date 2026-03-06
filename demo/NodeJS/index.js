@@ -16,6 +16,9 @@ console.log('normalizeColor("hsla(120, 100%, 50%, 0.5)")            :::     ', n
 console.log('HWB');
 console.log('normalizeColor("hwb(120 50% 0%)")                      :::     ', normalizeColor("hwb(120 50% 0%)"));
 console.log('normalizeColor("hwb(120, 50%, 0%)")                    :::     ', normalizeColor("hwb(120, 50%, 0%)"));
+console.log('LAB (CIE L*a*b*)');
+console.log('normalizeColor("lab(50 10 -5)")                        :::     ', normalizeColor("lab(50 10 -5)"));
+console.log('normalizeColor("lab(50% 0 0)")                         :::     ', normalizeColor("lab(50% 0 0)"));
 console.log('LCH (CIE LCH)');
 console.log('normalizeColor("lch(50% 20 180)")                      :::     ', normalizeColor("lch(50% 20 180)"));
 console.log('normalizeColor("lch(50, 20, 180)")                     :::     ', normalizeColor("lch(50, 20, 180)"));
