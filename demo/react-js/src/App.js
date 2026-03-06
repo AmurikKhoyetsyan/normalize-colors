@@ -47,28 +47,32 @@ function App() {
         <div className="App">
             <main className="App-main">
                 <table>
-                    <tr>
-                        <th>Example</th>
-                        <th>Result</th>
-                    </tr>
-                    {
-                        tests.map((item, index) => {
-                            if (item.type === 'name') {
+                    <thead>
+                        <tr>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            tests.map((item, index) => {
+                                if (item.type === 'name') {
+                                    return (
+                                        <tr key={index}>
+                                            <th>{item.name}</th>
+                                            <th></th>
+                                        </tr>
+                                    );
+                                }
                                 return (
                                     <tr key={index}>
-                                        <th>{item.name}</th>
-                                        <th></th>
+                                        <td>{item.input}</td>
+                                        <td style={{color: normalizeColor(item.input)}}>{normalizeColor(item.input)}</td>
                                     </tr>
                                 );
-                            }
-                            return (
-                                <tr key={index}>
-                                    <td>{item.input}</td>
-                                    <td style={{color: normalizeColor(item.input)}}>{normalizeColor(item.input)}</td>
-                                </tr>
-                            );
-                        })
-                    }
+                            })
+                        }
+                    </tbody>
                 </table>
             </main>
         </div>
