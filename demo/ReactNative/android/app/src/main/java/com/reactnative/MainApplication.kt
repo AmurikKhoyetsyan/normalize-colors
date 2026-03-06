@@ -1,4 +1,4 @@
-package com.demoreactnative
+package com.reactnative
 
 import android.app.Application
 import com.facebook.react.PackageList
