@@ -55,9 +55,9 @@ const tests = [
             <tbody>
             <tr v-for="(item, index) in tests" :key={index}>
                 <th v-if="item.type === 'name'">{{ item.name }}</th>
-                <th v-else>{{ item.input }}</th>
+                <td v-else>{{ item.input }}</td>
                 <th v-if="item.type === 'name'"></th>
-                <th v-else :style="{color: normalizeColor(item.input)}">{{ normalizeColor(item.input) }}</th>
+                <td v-else :style="{color: normalizeColor(item.input)}">{{ normalizeColor(item.input) }}</td>
             </tr>
             </tbody>
         </table>
